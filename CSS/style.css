@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+/* Раздел Артура, контент в центре с шаблонами */
+
+.templates{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+}
+.template_section__text{
+    padding-top: 20px;
+}
+.template_card{
+    width: 600px;
+    height: 250px;
+    margin-bottom: 40px;
+    background-color: white;
+    border: gray 1px solid;
+}
+.template_card__img{
+  height: 240px;
+  
+}
+.about_us_section{
+    background-color: tomato;
+}
+.about_us__text{
+    text-align: center;
+}
+/* Конец раздела Артура, контент в центре с шаблонами */
+header{
+    min-height: 100px;
+    background-color: white;
+    border-bottom: gray 1px solid;
+}
+footer{
+    border-top: gray 1px solid;
+    min-height: 300px;
+    background-color: white;
+}
+.template_selection_section{
+    text-align: center;
+}
