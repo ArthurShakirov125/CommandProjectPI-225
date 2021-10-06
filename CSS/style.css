@@ -53,26 +53,23 @@ header{
   .section__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .header-menu {
     min-height: 100px;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: #F9F6F1;
   }
-  
   
   
   .header__img__burger-M{
     z-index: 1000;
     top: 0;
     cursor: pointer;
-    margin: 20px;
+    margin-right: 20px;
   }
 
 
@@ -82,13 +79,22 @@ header{
   }
 
   .mainmenu__title{
-    display: flex;
     font-weight: 600;
     line-height: 1.14;
     text-transform: uppercase;
     max-width: 240px;
     margin-left: 300px;
     margin-top: -50px;
+  }
+
+  .mainmenu__title__right{
+    font-weight: 600;
+    text-transform: uppercase;
+    max-width: 240px;
+  }
+
+  .mainmenu__item{
+      margin-top: 50px;
   }
   
 /*Конец раздела Павла, шапка */
