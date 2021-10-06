@@ -65,11 +65,14 @@ header{
   }
   
   
-  .header__img__burger-M{
+ .header__img__burger-M{
     z-index: 1000;
     top: 0;
     cursor: pointer;
-    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 25px;
   }
 
 
@@ -79,6 +82,7 @@ header{
   }
 
   .mainmenu__title{
+    display: flex;
     font-weight: 600;
     line-height: 1.14;
     text-transform: uppercase;
