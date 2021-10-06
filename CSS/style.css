@@ -38,11 +38,61 @@ body{
     text-align: center;
 }
 /* Конец раздела Артура, контент в центре с шаблонами */
+
+/* Раздел Павла, шапка */
 header{
     min-height: 100px;
     background-color: white;
     border-bottom: gray 1px solid;
 }
+  
+  .section {
+    text-decoration-line: none;
+  }
+  
+  .section__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .header-menu {
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #F9F6F1;
+  }
+  
+  
+  
+  .header__img__burger-M{
+    z-index: 1000;
+    top: 0;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+
+  .header__img__logo-text{
+    width: 192px;
+    height: 80px;
+  }
+
+  .mainmenu__title{
+    display: flex;
+    font-weight: 600;
+    line-height: 1.14;
+    text-transform: uppercase;
+    max-width: 240px;
+    margin-left: 300px;
+    margin-top: -50px;
+  }
+  
+/*Конец раздела Павла, шапка */
+
 footer{
     border-top: gray 1px solid;
     min-height: 300px;
