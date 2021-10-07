@@ -27,6 +27,10 @@ body{
     background-color: white;
     border: gray 1px solid;
 }
+.template_link{
+  text-decoration: none;
+  color: black;
+}
 .template_card__img{
   height: 240px;
   
