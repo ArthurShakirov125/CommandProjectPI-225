@@ -79,6 +79,9 @@ header{
     margin-right: 25px;
   }
 
+  .header__logo{
+    text-decoration: none;
+  }
 
   .header__img__logo-text{
     width: 192px;
