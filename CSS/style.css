@@ -118,3 +118,29 @@ footer{
 .template_selection_section{
     text-align: center;
 }
+.foot{
+    display: flex;
+    border: 2px solid black; 
+    
+}
+.footer_logo{
+  display: flex;
+  font-weight: 600;
+  line-height: 1.14;
+  text-transform: uppercase;
+  max-width: 240px;
+  margin-left: 300px;
+}
+.footer_logo__img{
+  margin-right: 30px;
+}
+.footer_list{
+  margin-left: 327px;
+  list-style-type: none;
+}
+.footer_list__street{
+  padding-bottom: 20px;
+}
+.footer_links{
+  margin-left: 365px;
+}
