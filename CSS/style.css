@@ -7,7 +7,7 @@ html {
     box-sizing: inherit;
 }
 body{
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 /* Раздел Артура, контент в центре с шаблонами */
 
@@ -105,7 +105,7 @@ header{
   }
 
   .mainmenu__item{
-      margin-top: 50px;
+      margin-top: 33px;
   }
   
 /*Конец раздела Павла, шапка */
