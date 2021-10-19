@@ -35,6 +35,111 @@ body{
   height: 240px;
   
 }
+/*-шаблон 1 --*/
+.templ1_header{
+ height: 20%;
+ border: 2px solid black;
+ border-bottom: 1px;
+}
+.templ1_main{
+ height: 60%;
+ border: 2px solid black;
+}
+.templ1_footer{
+  height: 24%;
+ border: 2px solid black;
+ border-top: 1px;
+}
+/*-шаблон 2 --*/
+.templ2_header{
+  height: 20%;
+  border: 2px solid black;
+  border-bottom: 1px;
+ }
+ .templ2_main{
+  display: flex;
+  height: 60%;
+  border: 2px solid black;
+ }
+ .templ2_main__section1{
+   height: 100%;
+   width: 40%;
+ }
+ .templ2_main__section2{
+    height: 100%;
+    width: 60%;
+    border-left: 2px solid black;
+ }
+ .templ2_footer{
+   height: 24%;
+  border: 2px solid black;
+  border-top: 1px;
+ }
+ /*-шаблон 3 --*/
+ .templ3_header{
+  height: 20%;
+  border: 2px solid black;
+  border-bottom: 1px;
+ }
+ .templ3_main{
+  display: flex;
+  height: 30%;
+  border: 2px solid black;
+ }
+ .second_main{
+   border-top: 1px;
+ }
+ .templ3_main__section1{
+   height: 100%;
+   width: 40%;
+ }
+ .templ3_main__section2{
+    height: 100%;
+    width: 60%;
+    border-left: 2px solid black;
+ }
+ .templ3_footer{
+   height: 24%;
+  border: 2px solid black;
+  border-top: 1px;
+ }
+ /*-шаблон 4 --*/
+ .templ4_header{
+  height: 20%;
+  border: 2px solid black;
+  border-bottom: 1px;
+ }
+ .templ4_main{
+  display: flex;
+  height: 60%;
+  border: 2px solid black;
+ }
+ .templ4_main__section1{
+   height: 100%;
+   width: 40%;
+ }
+ .templ4_main__section2{
+    height: 100%;
+    width: 60%;
+    border-left: 2px solid black;
+ }
+ .templ4_footer{
+   height: 24%;
+   border: 2px solid black;
+   border-top: 1px;
+ }
+ .templ4_main_section2_element{
+   height: 25%;
+   width: 100%;
+   border: 1px solid black;
+ }
+
+
+
+
+
+
+ /* ------ Секция о нас -*/
 .about_us_section{
     background-color: tomato;
 }
