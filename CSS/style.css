@@ -9,6 +9,7 @@ html {
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
 /* Раздел Артура, контент в центре с шаблонами */
 
 .templates{
@@ -114,6 +115,7 @@ footer{
     border-top: gray 1px solid;
     min-height: 300px;
     background-color: white;
+    justify-content: center;
 }
 .template_selection_section{
     text-align: center;
@@ -121,26 +123,32 @@ footer{
 .foot{
     display: flex;
     border: 1px solid grey;
-    
+   
 }
+
+.map{
+  margin-left: 10px;
+}
+
 .footer_logo{
   display: flex;
   font-weight: 600;
   line-height: 1.14;
   text-transform: uppercase;
-  max-width: 240px;
-  margin-left: 300px;
+  max-width: 40px;
+  margin-left: 40px;
 }
 .footer_logo__img{
-  margin-right: 30px;
+  margin-right: 20px;
+  width: 75px;
 }
 .footer_list{
-  margin-left: 327px;
+
   list-style-type: none;
 }
 .footer_list__street{
   padding-bottom: 20px;
 }
 .footer_links{
-  margin-left: 365px;
+  margin-left: 40px;
 }
