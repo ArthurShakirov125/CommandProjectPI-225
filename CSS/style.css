@@ -227,8 +227,7 @@ footer{
 }
 .foot{
     display: flex;
-    border: 1px solid grey;
-   
+    border: 1px solid grey; 
 }
 
 .map{
@@ -236,7 +235,6 @@ footer{
 }
 
 .footer_logo{
-  display: flex;
   font-weight: 600;
   line-height: 1.14;
   text-transform: uppercase;
@@ -248,7 +246,6 @@ footer{
   width: 75px;
 }
 .footer_list{
-
   list-style-type: none;
 }
 .footer_list__street{
