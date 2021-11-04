@@ -6,3 +6,42 @@
     display: flex;
     justify-content: end;
 }
+
+html {
+    box-sizing: border-box;
+}
+
+
+.main_header{
+    
+}
+
+.main_div{
+    height: 250px;
+}
+
+.main_div__second{
+    height: 250px;
+    border: 1px solid gray;
+    border-right: white;
+    border-left: white;
+}
+
+.main_div__inside{
+    border: 1px solid gray;
+    width: 500px;
+    height: 250px;
+}
+
+.main_footer{
+    
+}
+
+.container_listAndLinks{
+    margin-right: 50px;
+}
+
+.footer__template{
+    display: flex;
+    justify-content: end;
+}
