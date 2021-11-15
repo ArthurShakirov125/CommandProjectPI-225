@@ -7,10 +7,6 @@
     justify-content: end;
 }
 
-html {
-    box-sizing: border-box;
-}
-
 
 .main_header{
     
@@ -37,11 +33,6 @@ html {
     
 }
 
-.container_listAndLinks{
-    margin-right: 50px;
-}
 
-.footer__template{
-    display: flex;
-    justify-content: end;
-}
+
+

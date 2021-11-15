@@ -6,3 +6,23 @@
     display: flex;
     justify-content: end;
 }
+
+.main_header{
+    
+}
+
+.main_div{
+    height: 500px;
+}
+
+
+
+.main_div__inside{
+    border: 1px solid gray;
+    width: 500px;
+    height: 500px;
+}
+
+.main_footer{
+    
+}

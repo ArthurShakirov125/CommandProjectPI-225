@@ -68,7 +68,7 @@ class HelpButton{
 
     header_h1.addMethod("mouseover", () =>{
             header_h1.createPopUpWindow("r");
-            header_h1.pop_up_window.innerHTML = `<p>"Текст для окна"<p>`;
+            header_h1.pop_up_window.innerHTML = `<p>Изменение названия сайта<p>`;
             header_h1.addPopUpWindow();
     })
     header_h1.addMethod("mouseleave", () => {
