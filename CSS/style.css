@@ -149,7 +149,6 @@ header{
 /*Конец раздела Павла, шапка */
 /* Мужской раздел*/
 footer{
-    border-top: gray 1px solid;
     min-height: 300px;
     background-color: white;
     justify-content: center;
@@ -162,10 +161,6 @@ footer{
     justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-.map{
-  margin-left: 10px;
 }
 
 .footer_logo{
