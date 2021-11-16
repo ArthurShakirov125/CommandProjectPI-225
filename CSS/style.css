@@ -24,8 +24,8 @@ body{
     padding-top: 20px;
 }
 .template_card{
-    width: 600px; /*было 600*/
-    height: 240px;/*было 250*/
+    width: 800px; /*было 600*/
+    height: 450px;/*было 250*/
     margin-bottom: 40px;
     background-color: white;
 <<<<<<< HEAD
@@ -38,7 +38,7 @@ body{
   color: black;
 }
 .template_card__img{
-  height: 240px;
+  height: 450px;
   
 }
 /*Харченко исправляю шаблоны 16.11.21*/
@@ -47,25 +47,25 @@ body{
 .templ1_img{
   height: 100%;
   width: 100%;
- background-image: url(../img/Group\ 1.png);
+ background-image: url(../img/Group\ 1.svg);
 }
 /*-шаблон 2 --*/
 .templ2_img{
   height: 100%;
   width: 100%;
- background-image: url(../img/Group\ 2.png);
+ background-image: url(../img/Group\ 2.svg);
 }
  /*-шаблон 3 --*/
  .templ3_img{
   height: 100%;
   width: 100%;
- background-image: url(../img/Group\ 3.png);
+ background-image: url(../img/Group\ 3.svg);
 }
  /*-шаблон 4 --*/
  .templ4_img{
   height: 100%;
   width: 100%;
- background-image: url(../img/Group\ 4.png);
+ background-image: url(../img/Group\ 4.svg);
 }
 /*Харченко исправил шаблоны 16.11.21*/ 
 
