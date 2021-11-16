@@ -24,8 +24,8 @@ body{
     padding-top: 20px;
 }
 .template_card{
-    width: 600px; /*было 600*/
-    height: 240px;/*было 250*/
+    width: 800px; /*было 600*/
+    height: 450px;/*было 250*/
     margin-bottom: 40px;
     background-color: white;
 <<<<<<< HEAD
@@ -38,7 +38,7 @@ body{
   color: black;
 }
 .template_card__img{
-  height: 240px;
+  height: 450px;
   
 }
 /*Харченко исправляю шаблоны 16.11.21*/
