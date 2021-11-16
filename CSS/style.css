@@ -28,7 +28,6 @@ body{
     height: 240px;/*было 250*/
     margin-bottom: 40px;
     background-color: white;
-    border: gray 1px solid; /*Я бы рамки вовсе убрал, чтобы не было зазоров*/
 }
 .template_link{
   text-decoration: none;
