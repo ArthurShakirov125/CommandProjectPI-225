@@ -28,7 +28,10 @@ body{
     height: 240px;/*было 250*/
     margin-bottom: 40px;
     background-color: white;
+<<<<<<< HEAD
    
+=======
+>>>>>>> d44a1228c9f7f652a245581119ccf994987ea196
 }
 .template_link{
   text-decoration: none;
@@ -149,7 +152,6 @@ header{
 /*Конец раздела Павла, шапка */
 /* Мужской раздел*/
 footer{
-    border-top: gray 1px solid;
     min-height: 300px;
     background-color: white;
     justify-content: center;
@@ -162,10 +164,6 @@ footer{
     justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-.map{
-  margin-left: 10px;
 }
 
 .footer_logo{
