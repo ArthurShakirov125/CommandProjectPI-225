@@ -24,11 +24,11 @@ body{
     padding-top: 20px;
 }
 .template_card{
-    width: 600px;
-    height: 250px;
+    width: 599px; /*было 600*/
+    height: 240px;/*было 250*/
     margin-bottom: 40px;
     background-color: white;
-    border: gray 1px solid;
+    border: gray 1px solid; /*Я бы рамки вовсе убрал, чтобы не было зазоров*/
 }
 .template_link{
   text-decoration: none;
