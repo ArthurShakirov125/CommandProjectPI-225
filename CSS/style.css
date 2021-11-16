@@ -24,11 +24,11 @@ body{
     padding-top: 20px;
 }
 .template_card{
-    width: 599px; /*было 600*/
+    width: 600px; /*было 600*/
     height: 240px;/*было 250*/
     margin-bottom: 40px;
     background-color: white;
-    border: gray 1px solid; /*Я бы рамки вовсе убрал, чтобы не было зазоров*/
+   
 }
 .template_link{
   text-decoration: none;
@@ -187,4 +187,13 @@ footer{
 }
 .footer_links{
   margin-left: 40px;
+}
+
+@media (max-width:1330px){
+  .mainmenu__item{
+      visibility: hidden;
+  }
+  .templates{
+    justify-content: center;
+  }
 }
