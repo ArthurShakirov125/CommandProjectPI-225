@@ -15,7 +15,40 @@ body{
 }
 
 /* Раздел Артура, контент в центре с шаблонами */
+.yellow{
+  background-color: yellow;
+}
+.red{
+ background-color: tomato;
+}
 
+.green{
+  background-color: yellowgreen;
+}
+
+.blue{
+  background-color: blue;
+}
+.bisque{
+  background-color: bisque;
+}
+.color_palette{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.palette_btn{
+  width: 15px;
+  height: 15px;
+  border: none;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.palette_btn:hover{
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-5px);
+}
 .templates{
     display: flex;
     justify-content: space-between;
@@ -33,10 +66,6 @@ body{
     height: 450px;/*было 250*/
     margin-bottom: 40px;
     background-color: white;
-<<<<<<< HEAD
-   
-=======
->>>>>>> d44a1228c9f7f652a245581119ccf994987ea196
 }
 .template_link{
   text-decoration: none;

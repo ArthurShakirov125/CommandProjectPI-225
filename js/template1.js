@@ -49,6 +49,13 @@ class HelpButton{
         this.button.addEventListener(EventType, Method);
     }
 
+    clearColors(){
+        this.dependent_element.classList.remove("red");
+        this.dependent_element.classList.remove("green");
+        this.dependent_element.classList.remove("yellow");
+        this.dependent_element.classList.remove("blue");
+        this.dependent_element.classList.remove("bisque");
+    }
 }
 
 
@@ -67,7 +74,7 @@ class HelpButton{
     });
 
     header_h1.addMethod("mouseover", () =>{
-            header_h1.createPopUpWindow("r");
+            header_h1.createPopUpWindow("right");
             header_h1.pop_up_window.innerHTML = `<p>Изменение названия сайта<p>`;
             header_h1.addPopUpWindow();
     })
@@ -75,3 +82,62 @@ class HelpButton{
     header_h1.addMethod("mouseleave", () => {
         header_h1.removePopUpWindow();
     })
+
+    let header_btn = new HelpButton(document.querySelector("#header_button"));
+    header_btn.findDependentElement(document.querySelector(".main_header"));
+
+    header_btn.addMethod("mouseleave", () => {
+        header_btn.removePopUpWindow();
+    })
+
+
+    header_btn.addMethod("click", () =>{
+        header_btn.createPopUpWindow("left");
+        header_btn.addPopUpWindow();
+
+        header_btn.pop_up_window.innerHTML = `<p>Изменение цвета шапки сайта<p>
+        <div class="color_palette"> 
+        <button class="palette_btn yellow"></button>
+        <button class="palette_btn red"></button>
+        <button class="palette_btn blue"></button>
+        <button class="palette_btn green"></button>
+        <button class="palette_btn bisque"></button>
+        </div>`;
+        
+
+        let yellow = document.querySelector(".yellow");
+        let red = document.querySelector(".red");
+        let blue = document.querySelector(".blue");
+        let green = document.querySelector(".green");
+        let bisque = document.querySelector(".bisque");
+
+        yellow.addEventListener("click", () => {
+            header_btn.clearColors();
+            header_btn.dependent_element.classList.add("yellow");
+        });
+
+        red.addEventListener("click", () => {
+            header_btn.clearColors();
+            header_btn.dependent_element.classList.add("red");
+        });
+
+        blue.addEventListener("click", () => {
+            header_btn.clearColors();
+            header_btn.dependent_element.classList.add("blue");
+        });
+
+        green.addEventListener("click", () => {
+            header_btn.clearColors();
+            header_btn.dependent_element.classList.add("green");
+        });
+
+        bisque.addEventListener("click", () => {
+            header_btn.clearColors();
+            header_btn.dependent_element.classList.add("bisque");
+        });
+
+       
+    })
+
+
+    
