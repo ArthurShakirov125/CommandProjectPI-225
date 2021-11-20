@@ -139,5 +139,119 @@ class HelpButton{
        
     })
 
+    let main_btn = new HelpButton(document.querySelector("#main_button"));
+    main_btn.findDependentElement(document.querySelector(".main_div"));
+
+    main_btn.addMethod("mouseleave", () => {
+        main_btn.removePopUpWindow();
+    })
+
+
+    main_btn.addMethod("click", () =>{
+        main_btn.createPopUpWindow("left");
+        main_btn.addPopUpWindow();
+
+        main_btn.pop_up_window.innerHTML = `<p>Изменение цвета главного раздела сайта<p>
+        <div class="color_palette"> 
+        <button class="palette_btn yellow"></button>
+        <button class="palette_btn red"></button>
+        <button class="palette_btn blue"></button>
+        <button class="palette_btn green"></button>
+        <button class="palette_btn bisque"></button>
+        </div>`;
+        
+
+        let yellow = document.querySelector(".yellow");
+        let red = document.querySelector(".red");
+        let blue = document.querySelector(".blue");
+        let green = document.querySelector(".green");
+        let bisque = document.querySelector(".bisque");
+
+        yellow.addEventListener("click", () => {
+            main_btn.clearColors();
+            main_btn.dependent_element.classList.add("yellow");
+        });
+
+        red.addEventListener("click", () => {
+            main_btn.clearColors();
+            main_btn.dependent_element.classList.add("red");
+        });
+
+        blue.addEventListener("click", () => {
+            main_btn.clearColors();
+            main_btn.dependent_element.classList.add("blue");
+        });
+
+        green.addEventListener("click", () => {
+            main_btn.clearColors();
+            main_btn.dependent_element.classList.add("green");
+        });
+
+        bisque.addEventListener("click", () => {
+            main_btn.clearColors();
+            main_btn.dependent_element.classList.add("bisque");
+        });
+
+       
+    })
+
+    let footer_btn = new HelpButton(document.querySelector("#footer_button"));
+    footer_btn.findDependentElement(document.querySelector(".main_footer"));
+
+    footer_btn.addMethod("mouseleave", () => {
+        footer_btn.removePopUpWindow();
+    })
+
+
+    footer_btn.addMethod("click", () =>{
+        footer_btn.createPopUpWindow("left");
+        footer_btn.addPopUpWindow();
+
+        footer_btn.pop_up_window.innerHTML = `<p>Изменение цвета подвала раздела сайта<p>
+        <div class="color_palette"> 
+        <button class="palette_btn yellow"></button>
+        <button class="palette_btn red"></button>
+        <button class="palette_btn blue"></button>
+        <button class="palette_btn green"></button>
+        <button class="palette_btn bisque"></button>
+        </div>`;
+        
+
+        let yellow = document.querySelector(".yellow");
+        let red = document.querySelector(".red");
+        let blue = document.querySelector(".blue");
+        let green = document.querySelector(".green");
+        let bisque = document.querySelector(".bisque");
+
+        yellow.addEventListener("click", () => {
+            footer_btn.clearColors();
+            footer_btn.dependent_element.classList.add("yellow");
+        });
+
+        red.addEventListener("click", () => {
+            footer_btn.clearColors();
+            footer_btn.dependent_element.classList.add("red");
+        });
+
+        blue.addEventListener("click", () => {
+            footer_btn.clearColors();
+            footer_btn.dependent_element.classList.add("blue");
+        });
+
+        green.addEventListener("click", () => {
+            footer_btn.clearColors();
+            footer_btn.dependent_element.classList.add("green");
+        });
+
+        bisque.addEventListener("click", () => {
+            footer_btn.clearColors();
+            footer_btn.dependent_element.classList.add("bisque");
+        });
+
+       
+    })
+
+
+
 
     
