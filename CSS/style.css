@@ -56,7 +56,6 @@ body{
     margin-right: 50px;
     padding-bottom: 5px;
     flex-wrap: wrap;
-    background-color: black;
 }
 .template_section__text{
     padding-top: 20px;
@@ -111,6 +110,7 @@ body{
  /* ------ Секция о нас -*/
 .about_us_section{
     background-color: tomato;
+    display: none;
 }
 .about_us__text{
     text-align: center;

@@ -76,14 +76,38 @@ html {
     align-items: center;
     position: relative;
 }
-
 .main_div{
+    padding: 30px;
     height: 600px;
     position: relative;
 }
-
+.main_img{
+  top: 20px;
+  left: 30px;
+  width: 400px;
+  height: 400px;
+  background: url("../templates_img/1.jpg");
+  position: absolute;
+  box-shadow: 0 8px 16px 0 rgba(0, 40, 120, .35);
+}
+#main_img_button{
+  position: absolute;
+  top: 20px;
+  left: 430px;
+}
+.main_text_container{
+  display: flex;
+  top: 150px;
+  left: 450px;
+  position: absolute;
+}
+#main_text_button{
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
 .main_footer{
-    position: relative;
+  position: relative;
 }
 
 .container_listAndLinks{

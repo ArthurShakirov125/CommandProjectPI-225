@@ -135,8 +135,6 @@ class HelpButton{
             header_btn.clearColors();
             header_btn.dependent_element.classList.add("bisque");
         });
-
-       
     })
 
     let main_btn = new HelpButton(document.querySelector("#main_button"));
@@ -191,8 +189,6 @@ class HelpButton{
             main_btn.clearColors();
             main_btn.dependent_element.classList.add("bisque");
         });
-
-       
     })
 
     let footer_btn = new HelpButton(document.querySelector("#footer_button"));
@@ -247,8 +243,6 @@ class HelpButton{
             footer_btn.clearColors();
             footer_btn.dependent_element.classList.add("bisque");
         });
-
-       
     })
 
 
