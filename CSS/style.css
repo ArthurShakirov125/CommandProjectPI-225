@@ -51,7 +51,7 @@ body{
 }
 .templates{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
     padding-bottom: 5px;
@@ -229,6 +229,12 @@ footer{
   .mainmenu__item{
       visibility: hidden;
   }
+  .templates{
+    justify-content: center;
+  }
+}
+
+@media (max-width:1730px){
   .templates{
     justify-content: center;
   }
