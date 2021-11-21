@@ -1,28 +1,156 @@
-.container_listAndLinks{
-    margin-right: 50px;
+.container_listAndLinks {
+  margin-right: 50px;
 }
 
-.footer__template{
-    display: flex;
-    justify-content: end;
+.footer__template {
+  display: flex;
 }
 
-.main_header{
-    
+.main_header {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.main_div{
-    height: 500px;
+.main_div {
+  display: flex;
+  height: 500px;
 }
 
-
-
-.main_div__inside{
-    border: 1px solid gray;
-    width: 500px;
-    height: 500px;
+.main_div__text {
+  flex-wrap: wrap;
+  width: 400px;
+  font-size: 20px;
 }
 
-.main_footer{
-    
+.main_div__picture {
+  border: 1px solid gray;
+  width: 500px;
+  height: 500px;
+}
+
+.main_div__title_and_text {
+  margin-left: 35px;
+  width: 1000px;
+}
+
+.main_div__title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.main_div__image {
+  width: 100%;
+  height: 100%;
+  background: url('../templates_img/4.jpg');
+  box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
+}
+
+.main_footer {
+}
+
+.template_h2 {
+  margin-left: 50px;
+}
+
+.button_style {
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 5px;
+  margin-left: 10px;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    45deg,
+    #6ab1d7 0%,
+    #33d9de 50%,
+    #002878 100%
+  );
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
+  transition: 0.5s;
+  position: relative;
+}
+
+.button_style:hover {
+  box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
+}
+
+/****---кнопки---***/
+#header_button {
+  top: 10px;
+  right: 20px;
+  position: absolute;
+}
+#main_button {
+  top: 10px;
+  right: 20px;
+  position: absolute;
+}
+#main_img_button {
+  position: absolute;
+  top: 666px;
+  left: 500px;
+}
+.main_text_button {
+  height: 30px;
+}
+
+.pop-up_window-r {
+  /* появляется справа */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
+  position: absolute;
+  color: black;
+  left: 10px;
+  top: 10px;
+  padding: 5px 25px;
+  z-index: 10;
+}
+.pop-up_window-l {
+  /* появляется слева*/
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
+  position: absolute;
+  color: black;
+  right: 10px;
+  top: 10px;
+  padding: 5px 25px;
+  z-index: 10;
+}
+
+#main_button {
+  top: 210px;
+  right: 20px;
+  position: absolute;
+}
+
+#main_text_button {
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#footer_button {
+  top: 10px;
+  right: 20px;
+  position: absolute;
+}
+
+.main_footer {
+  position: relative;
+}
+
+.footer__template {
+  display: flex;
+  justify-content: end;
 }
