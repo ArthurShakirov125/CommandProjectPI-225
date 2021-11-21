@@ -51,7 +51,7 @@ body{
 }
 .templates{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
     padding-bottom: 5px;
