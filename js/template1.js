@@ -8,6 +8,7 @@ class HelpButton{
     isEditable = true;
     isPopUp = true;
     popUpwindowSide;
+    iterator = 0;
 
     constructor(button){
         this.button = button;
@@ -244,6 +245,57 @@ class HelpButton{
             footer_btn.dependent_element.classList.add("bisque");
         });
     })
+
+    let main_text_btn = new HelpButton(document.querySelector("#main_text_button"));
+    main_text_btn.findDependentElement(document.querySelector(".main_text"));
+
+    main_text_btn.addMethod("mouseover", () =>{
+        main_text_btn.createPopUpWindow("right");
+        main_text_btn.pop_up_window.innerHTML = `<p>Изменение подписи к картинке</br></br>Используй shift+Enter чтобы перейти на другую строку</p>`
+        main_text_btn.addPopUpWindow();
+    })
+
+    main_text_btn.addMethod("click", () =>{
+        main_text_btn.dependent_element.setAttribute("contenteditable", header_h1.isEditable);
+        main_text_btn.isEditable = !main_text_btn.isEditable;
+        main_text_btn.dependent_element.focus();
+    })
+
+    main_text_btn.addMethod("mouseleave", () =>{
+        main_text_btn.removePopUpWindow();
+    })
+
+    let main_img_btn = new HelpButton(document.querySelector("#main_img_button"));
+    main_img_btn.findDependentElement(document.querySelector(".main_img"));
+
+    let images = [
+        {
+            path:"templates_img/2.jpg",
+        },
+        {
+            path:"templates_img/1.jpg",
+        }
+    ]
+
+    main_img_btn.addMethod("mouseover", () =>{
+        main_img_btn.createPopUpWindow("right");
+        main_img_btn.pop_up_window.innerHTML = `<p>Щелкни чтобы поменять картинку</p>`;
+        main_img_btn.addPopUpWindow();
+    })
+
+    main_img_btn.addMethod("click", () => {
+        console.log(main_img_btn.iterator);  
+        main_img_btn.dependent_element.style.background = "url(" + images[main_img_btn.iterator].path +  ")";
+        main_img_btn.iterator++;
+        if(main_img_btn.iterator > images.length - 1){
+            main_img_btn.iterator = 0;
+        }
+    })
+
+    main_img_btn.addMethod("mouseleave", () =>{
+        main_img_btn.removePopUpWindow();
+    })
+
 
 
 
