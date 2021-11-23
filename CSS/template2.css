@@ -4,6 +4,7 @@
 
 .footer__template {
   display: flex;
+  justify-content: space-between;
 }
 
 .main_header {
@@ -150,7 +151,11 @@
   position: relative;
 }
 
-.footer__template {
-  display: flex;
-  justify-content: end;
+
+
+#result_button{
+  margin-left: 50px;
+  margin-top: 100px;
+  height: 60px;
+  width: 150px;
 }
