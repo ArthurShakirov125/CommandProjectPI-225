@@ -251,7 +251,7 @@ class HelpButton{
 
     main_text_btn.addMethod("mouseover", () =>{
         main_text_btn.createPopUpWindow("right");
-        main_text_btn.pop_up_window.innerHTML = `<p>Изменение подписи к картинке</br></br>Используй shift+Enter чтобы перейти на другую строку</p>`
+        main_text_btn.pop_up_window.innerHTML = `<p>Изменение подписи к картинке</p>`
         main_text_btn.addPopUpWindow();
     })
 
