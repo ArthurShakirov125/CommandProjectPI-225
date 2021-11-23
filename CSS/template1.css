@@ -85,7 +85,7 @@ html {
 }
 .main_img {
   top: 20px;
-  left: 30px;
+  left: 50px;
   width: 400px;
   height: 400px;
   background: url('../templates_img/1.jpg');
@@ -95,18 +95,26 @@ html {
 #main_img_button {
   position: absolute;
   top: 20px;
-  left: 430px;
+  left: 450px;
 }
 .main_text_container {
   display: flex;
-  top: 150px;
-  left: 450px;
+  top: 30px;
+  left: 600px;
   position: absolute;
 }
 #main_text_button {
   height: 30px;
   margin-left: 10px;
   margin-top: 5px;
+}
+
+/*-------подвал-------*/
+#result_button{
+  margin-left: 50px;
+  margin-top: 100px;
+  height: 60px;
+  width: 150px;
 }
 .main_footer {
   position: relative;
@@ -118,5 +126,5 @@ html {
 
 .footer__template {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
