@@ -251,8 +251,10 @@ class HelpButton{
 
     main_text_btn.addMethod("mouseover", () =>{
         main_text_btn.createPopUpWindow("right");
-        main_text_btn.pop_up_window.innerHTML = `<p>Изменение подписи к картинке</p>`
+        main_text_btn.pop_up_window.innerHTML = `<p>Изменение подписи к картинке</p>
+                                 <button class="button_style" id="advanced_main_text_button">Больше натроек</button>`
         main_text_btn.addPopUpWindow();
+        
     })
 
     main_text_btn.addMethod("click", () =>{
@@ -295,6 +297,21 @@ class HelpButton{
     main_img_btn.addMethod("mouseleave", () =>{
         main_img_btn.removePopUpWindow();
     })
+
+    let result_button = document.querySelector("#result_button");
+
+    let buttons = document.querySelectorAll(".button_style");
+    let header = document.querySelector(".header");
+    let footer = document.querySelector(".footer__template");
+    result_button.addEventListener("click", () =>{
+        
+        for(let i = 0; i < buttons.length; i++){
+            console.log(buttons[i]);
+            buttons[i].remove();
+        }
+        header.remove();
+        footer.remove();
+    });
 
 
 
