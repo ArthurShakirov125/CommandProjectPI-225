@@ -256,7 +256,7 @@ class HelpButton{
     })
 
     main_text_btn.addMethod("click", () =>{
-        main_text_btn.dependent_element.setAttribute("contenteditable", header_h1.isEditable);
+        main_text_btn.dependent_element.setAttribute("contenteditable",  main_text_btn.isEditable);
         main_text_btn.isEditable = !main_text_btn.isEditable;
         main_text_btn.dependent_element.focus();
     })
@@ -313,6 +313,8 @@ class HelpButton{
             console.log(buttons[i]);
             buttons[i].remove();
         }
+        header_h1.dependent_element.setAttribute("contenteditable", false);
+        main_text_btn.dependent_element.setAttribute("contenteditable",  false);
         header.remove();
         footer.remove();
     });
