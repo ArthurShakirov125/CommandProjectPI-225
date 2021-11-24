@@ -302,6 +302,22 @@ class HelpButton{
         main_img_btn.removePopUpWindow();
     })
 
+    let result_button = document.querySelector("#result_button");
+
+    let buttons = document.querySelectorAll(".button_style");
+    let header = document.querySelector(".header");
+    let footer = document.querySelector(".footer__template");
+    result_button.addEventListener("click", () =>{
+        
+        for(let i = 0; i < buttons.length; i++){
+            console.log(buttons[i]);
+            buttons[i].remove();
+        }
+        header.remove();
+        footer.remove();
+    });
+
+
 
 
 
