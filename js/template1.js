@@ -56,6 +56,18 @@ class HelpButton{
         this.dependent_element.classList.remove("yellow");
         this.dependent_element.classList.remove("blue");
         this.dependent_element.classList.remove("bisque");
+
+        this.dependent_element.classList.remove("red1");
+        this.dependent_element.classList.remove("green1");
+        this.dependent_element.classList.remove("yellow1");
+        this.dependent_element.classList.remove("blue1");
+        this.dependent_element.classList.remove("bisque1");
+
+        this.dependent_element.classList.remove("red2");
+        this.dependent_element.classList.remove("green2");
+        this.dependent_element.classList.remove("yellow2");
+        this.dependent_element.classList.remove("blue2");
+        this.dependent_element.classList.remove("bisque2");
     }
 }
 
@@ -152,43 +164,43 @@ class HelpButton{
 
         main_btn.pop_up_window.innerHTML = `<p>Изменение цвета главного раздела сайта<p>
         <div class="color_palette"> 
-        <button class="palette_btn yellow"></button>
-        <button class="palette_btn red"></button>
-        <button class="palette_btn blue"></button>
-        <button class="palette_btn green"></button>
-        <button class="palette_btn bisque"></button>
+        <button class="palette_btn yellow1"></button>
+        <button class="palette_btn red1"></button>
+        <button class="palette_btn blue1"></button>
+        <button class="palette_btn green1"></button>
+        <button class="palette_btn bisque1"></button>
         </div>`;
         
 
-        let yellow = document.querySelector(".yellow");
-        let red = document.querySelector(".red");
-        let blue = document.querySelector(".blue");
-        let green = document.querySelector(".green");
-        let bisque = document.querySelector(".bisque");
+        let yellow = document.querySelector(".yellow1");
+        let red = document.querySelector(".red1");
+        let blue = document.querySelector(".blue1");
+        let green = document.querySelector(".green1");
+        let bisque = document.querySelector(".bisque1");
 
         yellow.addEventListener("click", () => {
             main_btn.clearColors();
-            main_btn.dependent_element.classList.add("yellow");
+            main_btn.dependent_element.classList.add("yellow1");
         });
 
         red.addEventListener("click", () => {
             main_btn.clearColors();
-            main_btn.dependent_element.classList.add("red");
+            main_btn.dependent_element.classList.add("red1");
         });
 
         blue.addEventListener("click", () => {
             main_btn.clearColors();
-            main_btn.dependent_element.classList.add("blue");
+            main_btn.dependent_element.classList.add("blue1");
         });
 
         green.addEventListener("click", () => {
             main_btn.clearColors();
-            main_btn.dependent_element.classList.add("green");
+            main_btn.dependent_element.classList.add("green1");
         });
 
         bisque.addEventListener("click", () => {
             main_btn.clearColors();
-            main_btn.dependent_element.classList.add("bisque");
+            main_btn.dependent_element.classList.add("bisque1");
         });
     })
 
@@ -206,43 +218,43 @@ class HelpButton{
 
         footer_btn.pop_up_window.innerHTML = `<p>Изменение цвета подвала раздела сайта<p>
         <div class="color_palette"> 
-        <button class="palette_btn yellow"></button>
-        <button class="palette_btn red"></button>
-        <button class="palette_btn blue"></button>
-        <button class="palette_btn green"></button>
-        <button class="palette_btn bisque"></button>
+        <button class="palette_btn yellow2"></button>
+        <button class="palette_btn red2"></button>
+        <button class="palette_btn blue2"></button>
+        <button class="palette_btn green2"></button>
+        <button class="palette_btn bisque2"></button>
         </div>`;
         
 
-        let yellow = document.querySelector(".yellow");
-        let red = document.querySelector(".red");
-        let blue = document.querySelector(".blue");
-        let green = document.querySelector(".green");
-        let bisque = document.querySelector(".bisque");
+        let yellow = document.querySelector(".yellow2");
+        let red = document.querySelector(".red2");
+        let blue = document.querySelector(".blue2");
+        let green = document.querySelector(".green2");
+        let bisque = document.querySelector(".bisque2");
 
         yellow.addEventListener("click", () => {
             footer_btn.clearColors();
-            footer_btn.dependent_element.classList.add("yellow");
+            footer_btn.dependent_element.classList.add("yellow2");
         });
 
         red.addEventListener("click", () => {
             footer_btn.clearColors();
-            footer_btn.dependent_element.classList.add("red");
+            footer_btn.dependent_element.classList.add("red2");
         });
 
         blue.addEventListener("click", () => {
             footer_btn.clearColors();
-            footer_btn.dependent_element.classList.add("blue");
+            footer_btn.dependent_element.classList.add("blue2");
         });
 
         green.addEventListener("click", () => {
             footer_btn.clearColors();
-            footer_btn.dependent_element.classList.add("green");
+            footer_btn.dependent_element.classList.add("green2");
         });
 
         bisque.addEventListener("click", () => {
             footer_btn.clearColors();
-            footer_btn.dependent_element.classList.add("bisque");
+            footer_btn.dependent_element.classList.add("bisque2");
         });
     })
 

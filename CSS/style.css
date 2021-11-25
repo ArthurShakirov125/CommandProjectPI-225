@@ -32,6 +32,40 @@ body{
 .bisque{
   background-color: bisque;
 }
+.yellow1{
+  background-color: yellow;
+}
+.red1{
+ background-color: tomato;
+}
+
+.green1{
+  background-color: yellowgreen;
+}
+
+.blue1{
+  background-color: blue;
+}
+.bisque1{
+  background-color: bisque;
+}
+.yellow2{
+  background-color: yellow;
+}
+.red2{
+ background-color: tomato;
+}
+
+.green2{
+  background-color: yellowgreen;
+}
+
+.blue2{
+  background-color: blue;
+}
+.bisque2{
+  background-color: bisque;
+}
 .color_palette{
   display: flex;
   flex-wrap: wrap;
