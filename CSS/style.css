@@ -15,6 +15,9 @@ body{
 }
 
 /* Раздел Артура, контент в центре с шаблонами */
+.display_none{
+  display: none;
+}
 .yellow{
   background-color: yellow;
 }

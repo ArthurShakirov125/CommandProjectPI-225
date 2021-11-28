@@ -69,6 +69,13 @@ class HelpButton{
         this.dependent_element.classList.remove("blue2");
         this.dependent_element.classList.remove("bisque2");
     }
+
+    ClearFonts(){
+        this.dependent_element.classList.remove("Montserrat");
+        this.dependent_element.classList.remove("Oswald");
+        this.dependent_element.classList.remove("Manrope");
+        this.dependent_element.classList.remove("Roboto");
+    }
 }
 
 
@@ -263,8 +270,7 @@ class HelpButton{
 
     main_text_btn.addMethod("mouseover", () =>{
         main_text_btn.createPopUpWindow("right");
-        main_text_btn.pop_up_window.innerHTML = `<p>Изменение подписи к картинке</p>
-                                 <button class="button_style" id="advanced_main_text_button">Больше натроек</button>`
+        main_text_btn.pop_up_window.innerHTML = `<p>Изменение подписи к картинке</p`
         main_text_btn.addPopUpWindow();
         
     })
@@ -318,13 +324,73 @@ class HelpButton{
     result_button.addEventListener("click", () =>{
         
         for(let i = 0; i < buttons.length; i++){
-            console.log(buttons[i]);
             buttons[i].remove();
         }
         header_h1.dependent_element.setAttribute("contenteditable", false);
         main_text_btn.dependent_element.setAttribute("contenteditable",  false);
         header.remove();
         footer.remove();
+    });
+
+    let advanced_settings_exit_button = new HelpButton(document.querySelector(".settings-exit"));
+    advanced_settings_exit_button.findDependentElement(document.querySelector(".advanced_settings_wrapper"));
+
+    advanced_settings_exit_button.addMethod("click", () => {
+        advanced_settings_exit_button.dependent_element.classList.add("display_none");
+    });
+
+    
+    let font_buttons = document.querySelectorAll(".fonts_family_list--font");
+
+    let Montserrat_button = new HelpButton(document.querySelector(".Montserrat"));
+    Montserrat_button.findDependentElement(document.querySelector(".main_text"));
+
+    Montserrat_button.addMethod("click", () => {
+        Montserrat_button.ClearFonts();
+        Montserrat_button.dependent_element.classList.add("Montserrat");
+
+        for(let i = 0; i < font_buttons.length; i++){
+            font_buttons[i].classList.remove("selected_font");
+        }
+        Montserrat_button.button.classList.add("selected_font");
+    });
+
+    let Oswald_button = new HelpButton(document.querySelector(".Oswald"));
+    Oswald_button.findDependentElement(document.querySelector(".main_text"));
+
+    Oswald_button.addMethod("click", () => {
+        Oswald_button.ClearFonts()
+        Oswald_button.dependent_element.classList.add("Oswald");
+
+        for(let i = 0; i < font_buttons.length; i++){
+            font_buttons[i].classList.remove("selected_font");
+        }
+        Oswald_button.button.classList.add("selected_font");
+    });
+
+    let Manrope_button = new HelpButton(document.querySelector(".Manrope"));
+    Manrope_button.findDependentElement(document.querySelector(".main_text"));
+
+    Manrope_button.addMethod("click", () => {
+        Manrope_button.ClearFonts();
+        Manrope_button.dependent_element.classList.add("Manrope");
+        for(let i = 0; i < font_buttons.length; i++){
+            font_buttons[i].classList.remove("selected_font");
+        }
+        Manrope_button.button.classList.add("selected_font");
+    });
+
+    let Roboto_button = new HelpButton(document.querySelector(".Roboto"));
+    Roboto_button.findDependentElement(document.querySelector(".main_text"));
+
+    Roboto_button.addMethod("click", () => {
+        Roboto_button.ClearFonts();
+        Roboto_button.dependent_element.classList.add("Roboto");
+        for(let i = 0; i < font_buttons.length; i++){
+            console.log(font_buttons[i]);
+            font_buttons[i].classList.remove("selected_font");
+        }
+        Roboto_button.button.classList.add("selected_font");
     });
 
 

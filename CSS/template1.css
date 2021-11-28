@@ -109,7 +109,6 @@ html {
   margin-top: 5px;
 }
 .advanced_settings_wrapper{
-  display: none;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
   background-color: white;
@@ -129,7 +128,7 @@ html {
   top: 10px;
 }
 .settings_content_wrapper div{
-  height: 200px;
+  height: 140px;
   width: 200px;
   padding-top: 5px;
   padding-left: 10%;
@@ -137,6 +136,29 @@ html {
 }
 .settings-font_family{
   
+}
+.fonts_family_list{
+  list-style: none;
+}
+
+.fonts_family_list--font{
+  border: black 1px solid;
+  margin: 1px 0;
+}
+.selected_font{
+  border: blueviolet 2px solid;
+}
+.Montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+.Roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.Manrope{
+  font-family: 'Manrope', sans-serif;
+}
+.Oswald{
+  font-family: 'Oswald', sans-serif;
 }
 .settings-font_style{
 
@@ -181,4 +203,9 @@ html {
 .footer__template {
   display: flex;
   justify-content: space-between;
+}
+
+
+.fonts_family_list--font :hover{
+  font-size: 19px;
 }
