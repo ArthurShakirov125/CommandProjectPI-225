@@ -28,6 +28,7 @@ html {
 
 .button_style {
   border: none;
+  cursor: pointer;
   text-decoration: none;
   display: inline-block;
   padding: 5px 5px;

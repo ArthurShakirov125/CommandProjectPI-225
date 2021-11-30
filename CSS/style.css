@@ -96,16 +96,21 @@ body{
 }
 .template_section__text{
     padding-top: 20px;
+    margin-bottom: 60px;
 }
 .template_card{
     width: 800px; /*было 600*/
     height: 450px;/*было 250*/
-    margin-bottom: 40px;
+  
+    margin-bottom: 120px;
     background-color: white;
 }
 .template_link{
   text-decoration: none;
   color: black;
+  width: 800px;
+  height: 450px;
+  margin-bottom: 120px;
 }
 .template_card__img{
   height: 450px;
@@ -290,3 +295,4 @@ and (min-width : 1224px) {
 @media only screen
 and (min-width : 1824px) {
 }
+
