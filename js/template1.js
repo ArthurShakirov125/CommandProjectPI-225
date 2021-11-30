@@ -322,6 +322,7 @@ class HelpButton{
     let buttons = document.querySelectorAll(".button_style");
     let header = document.querySelector(".header");
     let footer = document.querySelector(".footer__template");
+    let setting = document.querySelector(".advanced_settings_wrapper")
     result_button.addEventListener("click", () =>{
         
         for(let i = 0; i < buttons.length; i++){
@@ -331,6 +332,7 @@ class HelpButton{
         main_text_btn.dependent_element.setAttribute("contenteditable",  false);
         header.remove();
         footer.remove();
+        setting.remove();
     });
 
     let advanced_settings_exit_button = new HelpButton(document.querySelector(".settings-exit"));
