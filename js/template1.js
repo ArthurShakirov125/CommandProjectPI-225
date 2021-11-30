@@ -12,6 +12,7 @@ class HelpButton{
     constructor(button){
         this.button = button;
     }
+
     findDependentElement(dependent_element){
         this.dependent_element = dependent_element;
     }
