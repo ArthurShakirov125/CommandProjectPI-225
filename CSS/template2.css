@@ -160,3 +160,12 @@
   height: 60px;
   width: 150px;
 }
+
+.wrapper{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
