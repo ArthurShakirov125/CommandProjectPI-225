@@ -16,6 +16,7 @@
 .main_div {
   display: flex;
   height: 500px;
+  position: relative;
 }
 
 .main_div__text {
@@ -98,8 +99,8 @@
 }
 #main_img_button {
   position: absolute;
-  top: 666px;
-  left: 500px;
+  top: 465px;
+  left: 502px;
 }
 .main_text_button {
   height: 30px;
@@ -130,12 +131,6 @@
   z-index: 10;
 }
 
-#main_button {
-  top: 210px;
-  right: 20px;
-  position: absolute;
-}
-
 #main_text_button {
   height: 30px;
   margin-left: 10px;
@@ -159,13 +154,4 @@
   margin-top: 100px;
   height: 60px;
   width: 150px;
-}
-
-.wrapper{
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
