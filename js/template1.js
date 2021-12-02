@@ -77,6 +77,13 @@ class HelpButton{
         this.dependent_element.classList.remove("Manrope");
         this.dependent_element.classList.remove("Roboto");
     }
+
+    ClearFontStyle(){
+        this.dependent_element.classList.remove("normal");
+        this.dependent_element.classList.remove("bold");
+        this.dependent_element.classList.remove("italic");
+        this.dependent_element.classList.remove("underline");
+    }
 }
 
 
@@ -395,6 +402,75 @@ class HelpButton{
         }
         Roboto_button.button.classList.add("selected_font");
     });
+
+
+    let style_buttons = document.querySelectorAll(".fonts_style_list--font");
+
+    let font_style_normal_button = new HelpButton(document.querySelector(".normal"));
+    font_style_normal_button.findDependentElement(document.querySelector(".main_text"));
+
+    font_style_normal_button.addMethod("click",() => {
+        font_style_normal_button.ClearFontStyle();
+        font_style_normal_button.dependent_element.classList.add("normal");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            style_buttons[i].classList.remove("selected_style");
+        }
+        font_style_normal_button.button.classList.add("selected_style");
+    });
+
+    let font_style_bold_button = new HelpButton(document.querySelector(".bold"));
+    font_style_bold_button.findDependentElement(document.querySelector(".main_text"));
+
+    font_style_bold_button.addMethod("click",() => {
+        font_style_bold_button.ClearFontStyle();
+        font_style_bold_button.dependent_element.classList.add("bold");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            style_buttons[i].classList.remove("selected_style");
+        }
+        font_style_bold_button.button.classList.add("selected_style");
+    });
+
+    let font_style_italic_button = new HelpButton(document.querySelector(".italic"));
+    font_style_italic_button.findDependentElement(document.querySelector(".main_text"));
+
+    font_style_italic_button.addMethod("click",() => {
+        font_style_italic_button.ClearFontStyle();
+        font_style_italic_button.dependent_element.classList.add("italic");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            style_buttons[i].classList.remove("selected_style");
+        }
+        font_style_italic_button.button.classList.add("selected_style");
+    });
+
+    let font_style_underline_button = new HelpButton(document.querySelector(".underline"));
+    font_style_underline_button.findDependentElement(document.querySelector(".main_text"));
+
+    font_style_underline_button.addMethod("click",() => {
+        font_style_underline_button.ClearFontStyle();
+        font_style_underline_button.dependent_element.classList.add("underline");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            style_buttons[i].classList.remove("selected_style");
+        }
+        font_style_underline_button.button.classList.add("selected_style");
+    });
+
+
+    let font_size_button = new HelpButton(document.querySelector(".settings_accept"));
+    font_size_button.findDependentElement(document.querySelector(".main_text"));
+
+    let font_size_input = document.querySelector(".settings_input");
+
+    font_size_button.addMethod("click", () => {
+        let font_size = font_size_input.value;
+        console.log(font_size);
+        font_size_button.dependent_element.setAttribute("style", "font-size:" + font_size + "px");
+    });
+    
+
 
 
 

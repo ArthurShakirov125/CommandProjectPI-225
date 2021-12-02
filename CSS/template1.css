@@ -114,7 +114,7 @@ html {
   box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
   background-color: white;
   top: -20px;
-  right: 200px;
+  right: 150px;
   position: absolute;
   z-index: 2;
   
@@ -147,7 +147,32 @@ html {
   margin: 1px 0;
 }
 .selected_font{
-  border: blueviolet 2px solid;
+  border: #0341bd 2px solid;
+}
+.fonts_style_list{
+  list-style: none;
+}
+
+.fonts_style_list--font{
+  border: black 1px solid;
+  margin: 1px 0;
+}
+.normal{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+.bold{
+  font-weight:bolder;
+}
+.italic{
+  font-style: italic
+}
+.underline{
+  text-decoration: underline;
+}
+.selected_style{
+  border: #0341bd 2px solid;
 }
 .Montserrat{
   font-family: 'Montserrat', sans-serif;
@@ -175,10 +200,8 @@ html {
   width: 140px;
 }
 .settings_accept{
+  margin-top: 15px;
   margin-left: 0;
-  position: absolute;
-  bottom: 10px;
-  left: auto;
 }
 #advanced_main_text_button{
   height: 50px;
