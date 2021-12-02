@@ -466,8 +466,14 @@ class HelpButton{
 
     font_size_button.addMethod("click", () => {
         let font_size = font_size_input.value;
-        console.log(font_size);
         font_size_button.dependent_element.setAttribute("style", "font-size:" + font_size + "px");
+    });
+
+    font_size_input.addEventListener("keydown", (e) =>{
+        if(e.code == "Enter"){
+            let font_size = font_size_input.value;
+            font_size_button.dependent_element.setAttribute("style", "font-size:" + font_size + "px");
+        }
     });
     
 
