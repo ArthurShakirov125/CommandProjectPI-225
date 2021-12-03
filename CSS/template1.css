@@ -146,9 +146,6 @@ html {
   border: black 1px solid;
   margin: 1px 0;
 }
-.selected_font{
-  border: #0341bd 2px solid;
-}
 .fonts_style_list{
   list-style: none;
 }
@@ -171,9 +168,6 @@ html {
 .underline{
   text-decoration: underline;
 }
-.selected_style{
-  border: #0341bd 2px solid;
-}
 .Montserrat{
   font-family: 'Montserrat', sans-serif;
 }
@@ -186,14 +180,43 @@ html {
 .Oswald{
   font-family: 'Oswald', sans-serif;
 }
-.settings-font_style{
-
+.fonts_color_list{
+  list-style: none;
 }
-.settings-color{
-
+.red_button{
+  background-color: tomato;
 }
-.settings-font-weight{
-  
+.green_button{
+  background-color: yellowgreen;
+}
+.white_button{
+  background-color: white;
+}
+.black_button{
+  background-color: black;
+  color: azure;
+}
+.blue_button{
+  background-color: blue;
+}
+.fonts_color_list--font{
+  border: black 1px solid;
+  margin: 1px 0;
+}
+.red_text{
+  color: tomato;
+}
+.blue_text{
+  color: #0341bd;
+}
+.green_text{
+  color: greenyellow;
+}
+.black_text{
+  color: black;
+}
+.white_text{
+  color: white;
 }
 .settings_input{
   margin-top: 5px;
@@ -207,7 +230,9 @@ html {
   height: 50px;
   width: 150px;
 }
-
+.selected_style{
+  border: blueviolet  2px solid;
+}
 
 /*-------подвал-------*/
 #result_button{
