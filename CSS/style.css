@@ -257,21 +257,21 @@ footer{
   font-weight: 600;
   line-height: 1.14;
   text-transform: uppercase;
-  max-width: 40px;
-  margin-left: 40px;
+  max-width: 30px;
+  margin-left: 1px;
 }
-.footer_logo__img{
-  margin-right: 20px;
-  width: 75px;
-}
+
 .footer_list{
+  display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .footer_list__street{
   padding-bottom: 20px;
 }
 .footer_links{
-  margin-left: 40px;
+  margin-left: 1px;
 }
 
 @media (max-width:1440px){
