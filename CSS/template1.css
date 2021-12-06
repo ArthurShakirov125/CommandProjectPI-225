@@ -110,13 +110,13 @@ html {
   margin-top: 5px;
 }
 
-#main_setting_button{
+#main_setting_button {
   position: absolute;
   left: 1215px;
   top: -10px;
 }
 
-.advanced_settings_wrapper{
+.advanced_settings_wrapper {
   display: none;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
@@ -126,123 +126,122 @@ html {
   position: absolute;
   z-index: 2;
 }
-.advanced_settings{
+.advanced_settings {
   padding: 50px;
   position: relative;
 }
-.settings-exit{
+.settings-exit {
   position: absolute;
   right: 10px;
   top: 10px;
 }
-.settings_content_wrapper div{
+.settings_content_wrapper div {
   height: 140px;
   width: 200px;
   padding-top: 5px;
   padding-left: 10%;
-  margin:5px;
+  margin: 5px;
 }
-.settings-font_family{
-  
+.settings-font_family {
 }
-.fonts_family_list{
+.fonts_family_list {
   list-style: none;
 }
 
-.fonts_family_list--font{
+.fonts_family_list--font {
   border: black 1px solid;
   margin: 1px 0;
 }
-.fonts_style_list{
+.fonts_style_list {
   list-style: none;
 }
 
-.fonts_style_list--font{
+.fonts_style_list--font {
   border: black 1px solid;
   margin: 1px 0;
 }
-.normal{
+.normal {
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
 }
-.bold{
-  font-weight:bolder;
+.bold {
+  font-weight: bolder;
 }
-.italic{
-  font-style: italic
+.italic {
+  font-style: italic;
 }
-.underline{
+.underline {
   text-decoration: underline;
 }
-.Montserrat{
+.Montserrat {
   font-family: 'Montserrat', sans-serif;
 }
-.Roboto{
+.Roboto {
   font-family: 'Roboto', sans-serif;
 }
-.Manrope{
+.Manrope {
   font-family: 'Manrope', sans-serif;
 }
-.Oswald{
+.Oswald {
   font-family: 'Oswald', sans-serif;
 }
-.fonts_color_list{
+.fonts_color_list {
   list-style: none;
 }
-.red_button{
+.red_button {
   background-color: tomato;
 }
-.green_button{
+.green_button {
   background-color: yellowgreen;
 }
-.white_button{
+.white_button {
   background-color: white;
 }
-.black_button{
+.black_button {
   background-color: black;
   color: azure;
 }
-.blue_button{
+.blue_button {
   background-color: blue;
 }
-.fonts_color_list--font{
+.fonts_color_list--font {
   border: black 1px solid;
   margin: 1px 0;
 }
-.red_text{
+.red_text {
   color: tomato;
 }
-.blue_text{
+.blue_text {
   color: #0341bd;
 }
-.green_text{
+.green_text {
   color: greenyellow;
 }
-.black_text{
+.black_text {
   color: black;
 }
-.white_text{
+.white_text {
   color: white;
 }
-.settings_input{
+.settings_input {
   margin-top: 5px;
   width: 140px;
 }
-.settings_accept{
+.settings_accept {
   margin-top: 15px;
   margin-left: 0;
 }
-#advanced_main_text_button{
+#advanced_main_text_button {
   height: 50px;
   width: 150px;
 }
-.selected_style{
-  border: blueviolet  2px solid;
+.selected_style {
+  border: blueviolet 2px solid;
 }
 
 /*-------подвал-------*/
-#result_button{
+#result_button {
   margin-left: 50px;
   margin-top: 100px;
   height: 60px;
@@ -261,7 +260,6 @@ html {
   justify-content: space-between;
 }
 
-
-.fonts_family_list--font :hover{
+.fonts_family_list--font :hover {
   font-size: 19px;
 }

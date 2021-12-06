@@ -69,6 +69,27 @@ class HelpButton{
         this.dependent_element.classList.remove("blue2");
         this.dependent_element.classList.remove("bisque2");
     }
+
+    ClearFonts(){
+        this.dependent_element.classList.remove("Montserrat");
+        this.dependent_element.classList.remove("Oswald");
+        this.dependent_element.classList.remove("Manrope");
+        this.dependent_element.classList.remove("Roboto");
+    }
+
+    ClearFontStyle(){
+        this.dependent_element.classList.remove("normal");
+        this.dependent_element.classList.remove("bold");
+        this.dependent_element.classList.remove("italic");
+        this.dependent_element.classList.remove("underline");
+    }
+    ClearFontColor(){
+        this.dependent_element.classList.remove("red_text");
+        this.dependent_element.classList.remove("blue_text");
+        this.dependent_element.classList.remove("green_text");
+        this.dependent_element.classList.remove("black_text");
+        this.dependent_element.classList.remove("white_text");
+    }
 }
 
 
@@ -319,6 +340,7 @@ class HelpButton{
     let buttons = document.querySelectorAll(".button_style");
     let header = document.querySelector(".header");
     let footer = document.querySelector(".footer__template");
+    let setting = document.querySelector(".advanced_settings_wrapper")
     result_button.addEventListener("click", () =>{
         
         for(let i = 0; i < buttons.length; i++){
@@ -329,7 +351,226 @@ class HelpButton{
         main_text_btn.dependent_element.setAttribute("contenteditable",  false);
         header.remove();
         footer.remove();
+        setting.remove();
     });
+
+    let advanced_settings_exit_button = new HelpButton(document.querySelector(".settings-exit"));
+    advanced_settings_exit_button.findDependentElement(document.querySelector(".advanced_settings_wrapper"));
+
+    advanced_settings_exit_button.addMethod("click", () => {
+        advanced_settings_exit_button.dependent_element.style.display = "none";
+    });
+
+    let setting_button = new HelpButton(document.querySelector("#main_setting_button"));
+    setting_button.findDependentElement(document.querySelector(".advanced_settings_wrapper"))
+
+    setting_button.addMethod("click", () => {
+        setting_button.dependent_element.style.display = "block";
+    });
+
+    setting_button.addMethod("mouseover", () =>{
+        setting_button.createPopUpWindow("left");
+        setting_button.pop_up_window.innerHTML = `<p>Щелкни чтобы настроить текст</p>`;
+        setting_button.addPopUpWindow();
+    })
+
+    setting_button.addMethod("mouseleave", () =>{
+        setting_button.removePopUpWindow();
+    })
+    
+    let font_buttons = document.querySelectorAll(".fonts_family_list--font");
+
+    let Montserrat_button = new HelpButton(document.querySelector(".Montserrat"));
+    Montserrat_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    Montserrat_button.addMethod("click", () => {
+        Montserrat_button.ClearFonts();
+        Montserrat_button.dependent_element.classList.add("Montserrat");
+
+        for(let i = 0; i < font_buttons.length; i++){
+            font_buttons[i].classList.remove("selected_style");
+        }
+        Montserrat_button.button.classList.add("selected_style");
+    });
+
+    let Oswald_button = new HelpButton(document.querySelector(".Oswald"));
+    Oswald_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    Oswald_button.addMethod("click", () => {
+        Oswald_button.ClearFonts()
+        Oswald_button.dependent_element.classList.add("Oswald");
+
+        for(let i = 0; i < font_buttons.length; i++){
+            font_buttons[i].classList.remove("selected_style");
+        }
+        Oswald_button.button.classList.add("selected_style");
+    });
+
+    let Manrope_button = new HelpButton(document.querySelector(".Manrope"));
+    Manrope_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    Manrope_button.addMethod("click", () => {
+        Manrope_button.ClearFonts();
+        Manrope_button.dependent_element.classList.add("Manrope");
+        for(let i = 0; i < font_buttons.length; i++){
+            font_buttons[i].classList.remove("selected_style");
+        }
+        Manrope_button.button.classList.add("selected_style");
+    });
+
+    let Roboto_button = new HelpButton(document.querySelector(".Roboto"));
+    Roboto_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    Roboto_button.addMethod("click", () => {
+        Roboto_button.ClearFonts();
+        Roboto_button.dependent_element.classList.add("Roboto");
+        for(let i = 0; i < font_buttons.length; i++){
+            console.log(font_buttons[i]);
+            font_buttons[i].classList.remove("selected_style");
+        }
+        Roboto_button.button.classList.add("selected_style");
+    });
+
+
+    let style_buttons = document.querySelectorAll(".fonts_style_list--font");
+
+    let font_style_normal_button = new HelpButton(document.querySelector(".normal"));
+    font_style_normal_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    font_style_normal_button.addMethod("click",() => {
+        font_style_normal_button.ClearFontStyle();
+        font_style_normal_button.dependent_element.classList.add("normal");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            style_buttons[i].classList.remove("selected_style");
+        }
+        font_style_normal_button.button.classList.add("selected_style");
+    });
+
+    let font_style_bold_button = new HelpButton(document.querySelector(".bold"));
+    font_style_bold_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    font_style_bold_button.addMethod("click",() => {
+        font_style_bold_button.ClearFontStyle();
+        font_style_bold_button.dependent_element.classList.add("bold");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            style_buttons[i].classList.remove("selected_style");
+        }
+        font_style_bold_button.button.classList.add("selected_style");
+    });
+
+    let font_style_italic_button = new HelpButton(document.querySelector(".italic"));
+    font_style_italic_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    font_style_italic_button.addMethod("click",() => {
+        font_style_italic_button.ClearFontStyle();
+        font_style_italic_button.dependent_element.classList.add("italic");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            style_buttons[i].classList.remove("selected_style");
+        }
+        font_style_italic_button.button.classList.add("selected_style");
+    });
+
+    let font_style_underline_button = new HelpButton(document.querySelector(".underline"));
+    font_style_underline_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    font_style_underline_button.addMethod("click",() => {
+        font_style_underline_button.ClearFontStyle();
+        font_style_underline_button.dependent_element.classList.add("underline");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            style_buttons[i].classList.remove("selected_style");
+        }
+        font_style_underline_button.button.classList.add("selected_style");
+    });
+
+
+    let font_size_button = new HelpButton(document.querySelector(".settings_accept"));
+    font_size_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    let font_size_input = document.querySelector(".settings_input");
+
+    font_size_button.addMethod("click", () => {
+        let font_size = font_size_input.value;
+        font_size_button.dependent_element.setAttribute("style", "font-size:" + font_size + "px");
+    });
+
+    font_size_input.addEventListener("keydown", (e) =>{
+        if(e.code == "Enter"){
+            let font_size = font_size_input.value;
+            font_size_button.dependent_element.setAttribute("style", "font-size:" + font_size + "px");
+        }
+    });
+
+    let color_buttons = document.querySelectorAll(".fonts_color_list--font");
+
+    let font_color_red_button = new HelpButton(document.querySelector(".red_button"));
+    font_color_red_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    font_color_red_button.addMethod("click",() => {
+        font_color_red_button.ClearFontColor();
+        font_color_red_button.dependent_element.classList.add("red_text");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            color_buttons[i].classList.remove("selected_style");
+        }
+        font_color_red_button.button.classList.add("selected_style");
+    });
+
+    let font_color_blue_button = new HelpButton(document.querySelector(".blue_button"));
+    font_color_blue_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    font_color_blue_button.addMethod("click",() => {
+        font_color_blue_button.ClearFontColor();
+        font_color_blue_button.dependent_element.classList.add("blue_text");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            color_buttons[i].classList.remove("selected_style");
+        }
+        font_color_blue_button.button.classList.add("selected_style");
+    });
+
+    let font_color_green_button = new HelpButton(document.querySelector(".green_button"));
+    font_color_green_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    font_color_green_button.addMethod("click",() => {
+        font_color_green_button.ClearFontColor();
+        font_color_green_button.dependent_element.classList.add("green_text");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            color_buttons[i].classList.remove("selected_style");
+        }
+        font_color_green_button.button.classList.add("selected_style");
+    });
+
+    let font_color_black_button = new HelpButton(document.querySelector(".black_button"));
+    font_color_black_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    font_color_black_button.addMethod("click",() => {
+        font_color_black_button.ClearFontColor();
+        font_color_black_button.dependent_element.classList.add("black_text");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            color_buttons[i].classList.remove("selected_style");
+        }
+        font_color_black_button.button.classList.add("selected_style");
+    });
+
+    let font_color_white_button = new HelpButton(document.querySelector(".white_button"));
+    font_color_white_button.findDependentElement(document.querySelector(".title_and_text"));
+
+    font_color_white_button.addMethod("click",() => {
+        font_color_white_button.ClearFontColor();
+        font_color_white_button.dependent_element.classList.add("white_text");
+        for(let i = 0; i < style_buttons.length; i++){
+            
+            color_buttons[i].classList.remove("selected_style");
+        }
+        font_color_white_button.button.classList.add("selected_style");
+    });
+
 
 
 

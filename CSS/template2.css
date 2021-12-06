@@ -23,6 +23,7 @@
   flex-wrap: wrap;
   width: 400px;
   font-size: 20px;
+  margin: 20px;
 }
 
 .main_div__picture {
@@ -33,13 +34,153 @@
 
 .main_div__title_and_text {
   margin-left: 35px;
-  width: 1000px;
+  width: 750px;
 }
 
-.main_div__title {
-  font-size: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+.main_div__title{
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+
+#main_setting_button {
+  position: absolute;
+  left: 1215px;
+  top: -10px;
+}
+
+.advanced_settings_wrapper {
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
+  background-color: white;
+  top: -20px;
+  right: 150px;
+  position: absolute;
+  z-index: 2;
+}
+
+.settings-exit {
+  position: absolute;
+  right: -220px;
+  top: -45px;
+}
+
+.settings-font_family {
+}
+
+.settings_input {
+  margin-top: 5px;
+  width: 140px;
+}
+.settings_accept {
+  margin-top: 15px;
+  margin-left: 0;
+}
+
+.advanced_settings {
+  padding: 50px;
+  position: relative;
+}
+
+.settings_content_wrapper div {
+  height: 140px;
+  width: 200px;
+  padding-top: 5px;
+  padding-left: 10%;
+  margin: 5px;
+}
+.settings-font_family {
+}
+
+.fonts_family_list {
+  list-style: none;
+}
+
+.fonts_family_list--font {
+  border: black 1px solid;
+  margin: 1px 0;
+}
+
+.fonts_style_list {
+  list-style: none;
+}
+
+.fonts_style_list--font {
+  border: black 1px solid;
+  margin: 1px 0;
+}
+.normal {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+.bold {
+  font-weight: bolder;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.Montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.Roboto {
+  font-family: 'Roboto', sans-serif;
+}
+.Manrope {
+  font-family: 'Manrope', sans-serif;
+}
+.Oswald {
+  font-family: 'Oswald', sans-serif;
+}
+.fonts_color_list {
+  list-style: none;
+}
+.red_button {
+  background-color: tomato;
+}
+.green_button {
+  background-color: yellowgreen;
+}
+.white_button {
+  background-color: white;
+}
+.black_button {
+  background-color: black;
+  color: azure;
+}
+.blue_button {
+  background-color: blue;
+}
+.fonts_color_list--font {
+  border: black 1px solid;
+  margin: 1px 0;
+}
+.red_text {
+  color: tomato;
+}
+.blue_text {
+  color: #0341bd;
+}
+.green_text {
+  color: greenyellow;
+}
+.black_text {
+  color: black;
+}
+.white_text {
+  color: white;
+}
+
+#advanced_main_text_button {
+  height: 50px;
+  width: 150px;
+}
+.selected_style {
+  border: blueviolet 2px solid;
 }
 
 .main_div__image {
@@ -147,9 +288,7 @@
   position: relative;
 }
 
-
-
-#result_button{
+#result_button {
   margin-left: 50px;
   margin-top: 100px;
   height: 60px;
