@@ -109,7 +109,16 @@ html {
   margin-left: 10px;
   margin-top: 5px;
 }
+
+#main_setting_button{
+  position: absolute;
+  height: 30px;
+  margin-left: 1355px;
+  margin-top: -40px;
+}
+
 .advanced_settings_wrapper{
+  display: none;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
   background-color: white;
@@ -117,7 +126,6 @@ html {
   right: 150px;
   position: absolute;
   z-index: 2;
-  
 }
 .advanced_settings{
   padding: 50px;

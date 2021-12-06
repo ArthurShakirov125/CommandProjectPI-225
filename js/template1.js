@@ -337,6 +337,7 @@ class HelpButton{
     let header = document.querySelector(".header");
     let footer = document.querySelector(".footer__template");
     let setting = document.querySelector(".advanced_settings_wrapper")
+
     result_button.addEventListener("click", () =>{
         
         for(let i = 0; i < buttons.length; i++){
@@ -353,9 +354,25 @@ class HelpButton{
     advanced_settings_exit_button.findDependentElement(document.querySelector(".advanced_settings_wrapper"));
 
     advanced_settings_exit_button.addMethod("click", () => {
-        advanced_settings_exit_button.dependent_element.classList.add("display_none");
+        advanced_settings_exit_button.dependent_element.style.display = "none";
     });
 
+    let setting_button = new HelpButton(document.querySelector("#main_setting_button"));
+    setting_button.findDependentElement(document.querySelector(".advanced_settings_wrapper"))
+
+    setting_button.addMethod("click", () => {
+        setting_button.dependent_element.style.display = "block";
+    });
+
+    setting_button.addMethod("mouseover", () =>{
+        setting_button.createPopUpWindow("right");
+        setting_button.pop_up_window.innerHTML = `<p>Щелкни чтобы настроить текст</p>`;
+        setting_button.addPopUpWindow();
+    })
+
+    setting_button.addMethod("mouseleave", () =>{
+        setting_button.removePopUpWindow();
+    })
     
     let font_buttons = document.querySelectorAll(".fonts_family_list--font");
 
@@ -549,12 +566,3 @@ class HelpButton{
         }
         font_color_white_button.button.classList.add("selected_style");
     });
-
-    
-
-
-
-
-
-
-    
