@@ -365,7 +365,7 @@ class HelpButton{
     });
 
     setting_button.addMethod("mouseover", () =>{
-        setting_button.createPopUpWindow("right");
+        setting_button.createPopUpWindow("left");
         setting_button.pop_up_window.innerHTML = `<p>Щелкни чтобы настроить текст</p>`;
         setting_button.addPopUpWindow();
     })
