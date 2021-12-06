@@ -112,9 +112,8 @@ html {
 
 #main_setting_button{
   position: absolute;
-  height: 30px;
-  margin-left: 1355px;
-  margin-top: -40px;
+  left: 1215px;
+  top: -10px;
 }
 
 .advanced_settings_wrapper{
