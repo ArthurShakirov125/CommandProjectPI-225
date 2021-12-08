@@ -309,13 +309,13 @@ class HelpButton{
             path:"templates_img/8.jpg"
         },
         {
-            path:"templates_img/9.jpg"
+            path:"templates_img/9.jfif"
         },
         {
             path:"templates_img/10.jpg"
         },
         {
-            path:"templates_img/11.jpg"
+            path:"templates_img/11.jfif"
         },
         {
             path:"templates_img/12.jpg"
