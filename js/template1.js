@@ -305,10 +305,22 @@ class HelpButton{
 
     let images = [
         {
-            path:"templates_img/2.jpg",
+            path:"templates_img/1.jpg"
         },
         {
-            path:"templates_img/1.jpg",
+            path:"templates_img/2.jpg"
+        },
+        {
+            path:"templates_img/3.jpg"
+        },
+        {
+            path:"templates_img/4.jpg"
+        },
+        {
+            path:"templates_img/5.jpg"
+        },
+        {
+            path:"templates_img/6.jpg"
         }
     ]
 

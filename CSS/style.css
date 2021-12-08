@@ -161,12 +161,17 @@ body{
 
  /* ------ Секция о нас -*/
 .about_us_section{
-    background-color: tomato;
-    display: none;
+  margin: 50px;
 }
-.about_us__text{
-    text-align: center;
+
+.about_us__title{
+  text-align: center;
 }
+
+.about_us_text__wrapper{
+ 
+}
+
 /* Конец раздела Артура, контент в центре с шаблонами */
 
 /* Раздел Павла, шапка */

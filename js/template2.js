@@ -303,17 +303,23 @@ class HelpButton{
 
     let images = [
         {
-            path:"templates_img/1.jpg",
+            path:"templates_img/7.jpg"
         },
         {
-            path:"templates_img/2.jpg",
+            path:"templates_img/8.jpg"
         },
         {
-            path:"templates_img/3.jpg",
+            path:"templates_img/9.jpg"
         },
         {
-            path:"templates_img/4.jpg",
-        }
+            path:"templates_img/10.jpg"
+        },
+        {
+            path:"templates_img/11.jpg"
+        },
+        {
+            path:"templates_img/12.jpg"
+        },
     ]
 
     main_img_btn.addMethod("mouseover", () =>{
