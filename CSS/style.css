@@ -25,6 +25,34 @@ body{
 }
 
 /* Раздел Артура, контент в центре с шаблонами */
+.button_style {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 5px;
+  margin-left: 10px;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    45deg,
+    #6ab1d7 0%,
+    #33d9de 50%,
+    #002878 100%
+  );
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
+  transition: 0.5s;
+  position: relative;
+}
+.button_style:hover {
+  box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
+}
 .display_none{
   display: none;
 }
@@ -119,9 +147,15 @@ body{
     margin-bottom: 120px;
     background-color: white;
     transition: 0.5s;
+    position: relative;
 }
-.template_card:hover{
-  opacity: 0.5;
+.button_temp{
+  opacity: 0;
+  font-size: 24px;
+  padding: 15px;
+  position: absolute;
+  left:293px;
+  top: 196px;
 }
 .template_link{
   text-decoration: none;
