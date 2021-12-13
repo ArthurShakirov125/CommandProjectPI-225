@@ -28,7 +28,7 @@
 
 .main_div__picture {
   border: 1px solid gray;
-  width: 500px;
+  width: 1000px;
   height: 500px;
 }
 
@@ -55,7 +55,7 @@
   box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
   background-color: white;
   top: -20px;
-  right: 150px;
+  left: 150px;
   position: absolute;
   z-index: 2;
 }
@@ -64,9 +64,6 @@
   position: absolute;
   right: -220px;
   top: -45px;
-}
-
-.settings-font_family {
 }
 
 .settings_input {
@@ -89,8 +86,6 @@
   padding-top: 5px;
   padding-left: 10%;
   margin: 5px;
-}
-.settings-font_family {
 }
 
 .fonts_family_list {
@@ -239,12 +234,14 @@
   position: absolute;
 }
 #main_img_button {
-  position: absolute;
-  top: 465px;
-  left: 502px;
-}
-.main_text_button {
   height: 30px;
+  margin-left: 10px;
+  margin-top: 55px;
+}
+#main_text_button {
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .pop-up_window-r {
@@ -272,11 +269,7 @@
   z-index: 10;
 }
 
-#main_text_button {
-  height: 30px;
-  margin-left: 10px;
-  margin-top: 5px;
-}
+
 
 #footer_button {
   top: 10px;

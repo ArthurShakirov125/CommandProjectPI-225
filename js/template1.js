@@ -8,7 +8,7 @@ class HelpButton{
     isEditable = true;
     isPopUp = true;
     popUpwindowSide;
-    iterator = 0;
+    iterator = 1;
 
     constructor(button){
         this.button = button;
