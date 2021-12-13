@@ -104,6 +104,10 @@ body{
     padding-bottom: 5px;
     flex-wrap: wrap;
 }
+.template_card_wrapper{
+  position: absolute;
+  background-color: cornsilk;
+}
 .template_section__text{
     padding-top: 20px;
     margin-bottom: 60px;
@@ -114,6 +118,10 @@ body{
   
     margin-bottom: 120px;
     background-color: white;
+    transition: 0.5s;
+}
+.template_card:hover{
+  opacity: 0.5;
 }
 .template_link{
   text-decoration: none;
@@ -166,10 +174,6 @@ body{
 
 .about_us__title{
   text-align: center;
-}
-
-.about_us_text__wrapper{
- 
 }
 
 /* Конец раздела Артура, контент в центре с шаблонами */
