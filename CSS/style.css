@@ -47,6 +47,7 @@ body{
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 40, 120, 0.35);
   transition: 0.5s;
+  position: relative;
 }
 .button_style:hover {
   box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
@@ -329,7 +330,7 @@ footer{
   }
 }
 
-@media (max-width:1833px){
+@media (max-width:1730px){
   .templates{
     justify-content: center;
   }
