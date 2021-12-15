@@ -322,6 +322,9 @@ footer{
 .footer_links{
   margin-left: 1px;
 }
+.hide_element{
+  display: none;
+}
 
 @media (max-width:1440px){
   .mainmenu__item{
