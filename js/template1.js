@@ -350,16 +350,29 @@ class HelpButton{
     let footer = document.querySelector(".footer__template");
     let setting = document.querySelector(".advanced_settings_wrapper")
 
+    let restore_button = document.querySelector("#restore_button");
+
     result_button.addEventListener("click", () =>{
         
         for(let i = 0; i < buttons.length; i++){
-            buttons[i].remove();
+            buttons[i].classList.add("hide_element");
         }
         header_h1.dependent_element.setAttribute("contenteditable", false);
         main_text_btn.dependent_element.setAttribute("contenteditable",  false);
-        header.remove();
-        footer.remove();
-        setting.remove();
+        header.classList.add("hide_element");
+        footer.classList.add("hide_element");
+        setting.classList.add("hide_element");
+        restore_button.classList.remove("hide_element");
+    });
+
+    restore_button.addEventListener("click", () =>{
+        for(let i = 0; i < buttons.length; i++){
+            buttons[i].classList.remove("hide_element");
+        }
+        header.classList.remove("hide_element");
+        footer.classList.remove("hide_element");
+        setting.classList.remove("hide_element");
+        restore_button.classList.add("hide_element");
     });
 
     let advanced_settings_exit_button = new HelpButton(document.querySelector(".settings-exit"));
