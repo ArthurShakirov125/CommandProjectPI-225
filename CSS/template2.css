@@ -287,3 +287,16 @@
   height: 60px;
   width: 150px;
 }
+
+
+
+#restore_button {
+  margin-left: 50px;
+  margin-top: 200px;
+  height: 60px;
+  width: 150px;
+}
+
+.hide_element{
+  display: none;
+}             

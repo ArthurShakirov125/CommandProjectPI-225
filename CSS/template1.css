@@ -241,6 +241,7 @@ html {
 .fonts_family_list--font :hover {
   font-size: 19px;
 }
+
 .hide_element{
   display: none;
 }
